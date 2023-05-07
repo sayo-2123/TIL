@@ -1,4 +1,7 @@
 # 20230507
+  -pythonインストール
+  https://prog-8.com/docs/python-env
+
   -paizaCランク学習
     -配列
 ## ボール回し
@@ -33,14 +36,14 @@
 ##ハイローゲーム
   # 親カードの情報を入力する
   parent = gets.chomp.split.map(&:to_i)
-  
+
   # 子カードの情報を入力する
   n = gets.chomp.to_i
   cards = []
   n.times do
     cards << gets.chomp.split.map(&:to_i)
   end
-  
+
   # 子カードと親カードを比較する
   cards.each do |card|
     if card[0] > parent[0] || (card[0] == parent[0] && card[1] < parent[1])
